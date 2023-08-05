@@ -1,6 +1,8 @@
 /*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css); */
 
-
+body{
+    overflow-x: hidden;
+}
 h1{
     width: 35%;
     text-align: center;
