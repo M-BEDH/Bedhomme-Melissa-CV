@@ -4,17 +4,22 @@ body{
     width: 55%;
     margin: auto;
 }
+.nom{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+    margin: auto;
+    padding-top: 20px;
+}
 h1{
-    text-align: center;
-    font-weight: bold;
     font-size: 40px;
     margin: auto;
-    padding-top: 30px;
     color: #1f9da1;
 }
 h2{
-    text-align: center;
     font-size: 35px;
+    margin: auto;
+    padding-top: 10px;
 }
 section{
    display: flex;
@@ -31,11 +36,12 @@ section{
     border-radius: 20px;
 }
 .survoler{
+    font-size: 15px;
     position: relative;
-    font-weight: lighter;
-    left: 310px;
+    left: 305px;
     top: 111px;
     width: 50px;
+    padding-bottom: 2px;
 }
 
 .BullesImage {
@@ -154,9 +160,9 @@ span{
     color: #f5aaaa;
 }
 .text{
-    width: 103px;
+    width: 100px;
     padding: 0px 0px 0px 7px;;
-    font-size: 21px;
+    font-size: 20px;
     color: #141414;
     border-bottom: 4px solid #f5aaaa;
     border-radius: 10px;
@@ -167,18 +173,63 @@ height: 50px;
 position: relative;
 height: 35px;
 }
+.Projets-git{
+font-size: 18px;
+position: relative;
+top: 10px;
+left: 5px;
+height: 35px;  
+}
 
-@media screen and (max-width: 400px) {
+
+@media screen and (min-width: 451px) and (max-width: 1035px) {
+   body{
+    margin: 0;
+   } 
+   .nom{
+width: 100%;
+   margin-left: 48%;
+   }
+   h1, h2{
+    font-size: 33px;
+   }
+   section{
+    width: 95vw;
+    padding: 15px;
+   }
+   .container{
+    width: 470px;
+    left: 140px;
+    top: -35px;
+   }
+   .BullesImage{
+    max-width: 120px;
+    margin-left: 0;
+   }
+   .survoler{
+    left: 230px;
+    top: 83px;
+   }
+}
+
+
+
+
+
+@media screen and (max-width: 450px) {
     body{
-        max-width: 100vw;
-        overflow-x: hidden;
         width: 320px;
+    }
+    .nom{
+        width: 95%;
     }
 h1{
     font-size: 30px;
 }
 h2{
     font-size: 25px;
+    margin: 0;
+    padding-top: 5px;
 }
 section{
     margin: 0;
@@ -194,27 +245,35 @@ section{
 .BullesImage{
     max-width: 90px;
     margin-left: 0;
+    margin-bottom: 0;
 }
 .BullesImage i{
     font-size: 2em;
 }
 span{
-    font-size: 14px;
+    font-size: 13px;
 }
 .text{
     width: 63px;
     font-size: 14px;
     padding: 4px 8px 1px 7px;
 }
-.Projet-ul li{
-    font-size: 12px;
+.Projet-ul li, .projet-git{
+    font-size: 14px;
     height: 30px;
-    list-style: none;
     position: relative;
-    left: -28px;
+    left: -15px;
     top: -10px;
-    margin-bottom: 5px;
-}    
+    margin-bottom: 8px;
+}   
+.survoler{
+    top:86px;
+}
+.Projets-git{
+    font-size: 14px;
+    top: 5px;
+}
+
 }
 
 
