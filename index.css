@@ -1,33 +1,43 @@
 body{
     overflow-x: hidden;
     background-color: #faebd762;
-    width: 70vw;
+    width: 82vw;
     margin: auto;
 }
+
 .nom{
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: auto;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
+
 h1{
     font-size: 40px;
     margin: auto;
     color: #1f9da1;
 }
+
 h2{
     font-size: 35px;
     margin: auto;
 }
+
 section{
     width: 75vw;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.images{
+    margin-bottom: 20px;
+}
+
 .container{
-    width: 50vw;
+    width: 35vw;
     position: relative;
     left: 200px;
     top: -6px;
@@ -35,7 +45,34 @@ section{
     background-color: #f5d2c92c;
     border-radius: 20px;
 }
+
+.content1,
+.content3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .survoler{
+    position: relative;
+    left: 305px;
+    top: 109px;
+    width: 21px;
+    font-size: 15px;
+}
+
+.content1 .survoler, 
+.content3 .survoler{
+    font-size: 15px;
+    position: relative;
+    left: 225px;
+    top: 111px;
+    width: 50px;
+    padding-bottom: 2px;
+}
+
+.content2 .survoler{
     font-size: 15px;
     position: relative;
     left: 305px;
@@ -51,7 +88,6 @@ section{
     max-width: 170px;
     margin-top: 40px;
     color: #bbb;
-    font-size: 16px;
     box-shadow: none !important;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -167,51 +203,83 @@ span{
     border-bottom: 4px solid #f5aaaa;
     border-radius: 10px;
 }
+
 .Projet-ul li{
-font-size: 20px;
-height: 50px;
-position: relative;
-height: 35px;
+    font-size: 20px;
+    height: 50px;
+    position: relative;
+    height: 35px;
 }
+
 .Projets-git{
-font-size: 18px;
-position: relative;
-top: 10px;
-left: 5px;
-height: 35px;  
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    height: 35px;  
 }
 
 
 @media screen and (min-width: 601px) and (max-width: 1135px) {
-   body{
-    margin: 0;
-   } 
-   .nom{
-   width: 100%;
-   }
-   h1, h2{
-    font-size: 33px;
-    margin: auto;
-   }
-   section{
-    width: 95vw;
-    padding: 15px;
-   }
-   .container{
-    width: 60vw;
-    left: 140px;
-    top: -35px;
-   }
-   .BullesImage{
-    max-width: 120px;
-    margin-left: 0;
-   }
-   .survoler{
-    left: 230px;
-    top: 83px;
-   }
+    body{
+        margin: 0;
+    } 
+    
+    .nom{
+        width: 100%;
+    }
+    
+    h1, h2{
+        font-size: 33px;
+        margin: auto;
+    }
+    
+    section{
+        width: 95vw;
+        padding: 15px;
+    }
+    
+    .container{
+        width: 67vw;
+        left: 140px;
+        top: -35px;
+    }
+    
+    .Projet-ul li,
+    .projet-git{
+        font-size: 17px;
+    }
+    
+    .content1,
+    .content3{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+    
+    .BullesImage{
+        max-width: 120px;
+        margin-left: 1%;
+    }
+    .survoler{
+        left: 235px;
+        top:79px;
+        font-size: 14px;
+    }
+    
+    .content1 .survoler, .content3 .survoler{
+        left: 183px;
+        top: 83px;
+        font-size: 14px;
+    }
+    
+    .content2 .survoler{
+        left: 230px;
+        top: 83px;
+        font-size: 14px;
+    }
 }
-
 
 
 
@@ -221,60 +289,87 @@ height: 35px;
         width: 70vw;
         margin: auto;
     }
-h1{
-    font-size: 25px;
-    margin: 0;
-}
-h2{
-    font-size: 22px;
-    padding-top: 5px;
-    margin: 0;
-}
-section{
-    margin: 0;
-}
-.container{
-   width: 61vw;
-   height: auto;
-   position: relative;
-   left: 90px;
-   top: -18px;
-   padding: 1px;
-}
-.BullesImage{
-    max-width: 90px;
-    margin-left: 0;
-    margin-bottom: 0;
-}
-.BullesImage i{
-    font-size: 2em;
-}
-span{
-    font-size: 13px;
-}
-.text{
-    width: 63px;
-    font-size: 14px;
-    padding: 4px 8px 1px 7px;
-}
-.Projet-ul li, .projet-git{
-    font-size: 14px;
-    height: 30px;
-    position: relative;
-    left: -15px;
-    top: -10px;
-    margin-bottom: 8px;
-}   
-.survoler{
-    left: 97%;
-    top:86px;
-}
-.Projets-git{
-    font-size: 14px;
-    top: 5px;
+    
+    h1{
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    h2{
+        font-size: 22px;
+        padding-top: 5px;
+        margin: 0;
+    }
+    
+    section{
+        margin: 0;
+    }
+    
+    .container{
+        width: 61vw;
+        height: auto;
+        position: relative;
+        left: 90px;
+        top: -18px;
+        padding: 1px;
+    }
+    
+    .BullesImage{
+        max-width: 90px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .BullesImage i{
+        font-size: 2em;
+    }
+    
+    span{
+        font-size: 13px;
+    }
+    
+    .text{
+        width: 63px;
+        font-size: 14px;
+        padding: 4px 8px 1px 7px;
+    }
+    
+    .Projet-ul li, .projet-git{
+        font-size: 14px;
+        height: 30px;
+        position: relative;
+        left: -15px;
+        top: -10px;
+        margin-bottom: 8px;
+    }  
+    
+    .content1,
+    .content3 {
+        position: relative;
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+    }
+    .survoler{
+        left: 95%;
+        font-size: 13px;
+    }
+
+    .content1 .survoler, .content2 .survoler, .content3 .survoler{
+        left: 95%;
+        top:86px;
+    }
+    .content1 .survoler .fa-regular,
+    .content2 .survoler .fa-regular,
+    .content3 .survoler .fa-regular {
+        font-size: 13px;
+    }
+    .Projets-git{
+        font-size: 14px;
+        top: 5px;
+    }
 }
 
-}
 
 
 
