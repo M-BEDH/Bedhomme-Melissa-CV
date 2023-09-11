@@ -1,7 +1,8 @@
-/*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css); */
-
 body{
     overflow-x: hidden;
+    background-color: #faebd762;
+    width: 55%;
+    margin: auto;
 }
 h1{
     text-align: center;
@@ -9,20 +10,40 @@ h1{
     font-size: 40px;
     margin: auto;
     padding-top: 30px;
-    padding-bottom: 50px;
-    color: rgb(26, 26, 141);
+    color: #1f9da1;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
 }
 section{
    display: flex;
    justify-content: center;
    flex-direction: column;
 }
+.container{
+    width: 630px;
+    position: relative;
+    left: 200px;
+    top: -6px;
+    padding: 10px;
+    background-color: #f5d2c92c;
+    border-radius: 20px;
+}
+.survoler{
+    position: relative;
+    font-weight: lighter;
+    left: 310px;
+    top: 111px;
+    width: 50px;
+}
+
 .BullesImage {
     position: relative;
     display: inline-block;
     margin: 20px;
-    max-width: 190px;
-    width: 100%;
+    max-width: 170px;
+    margin-top: 40px;
     color: #bbb;
     font-size: 16px;
     box-shadow: none !important;
@@ -82,7 +103,7 @@ section{
     transform: translate(-50%, -50%);
     font-size: 4em;
     z-index: 1;
-    color: rgb(247, 139, 112);
+    color: #f78b70;
 }
 
 .BullesImage a {
@@ -92,6 +113,10 @@ section{
     left: 0;
     right: 0;
     z-index: 1;
+    color: #20a2a7;
+}
+.BullesImage a:hover{
+    color: #f5633e;
 }
 
 .BullesImage:hover figcaption,
@@ -126,31 +151,71 @@ span{
     top: 65%;
     display: flex;
     justify-content: center;
-    color: rgb(245, 170, 170);
+    color: #f5aaaa;
 }
 .text{
-    width: 700px;
-    position: absolute;
-    left: 200px;
-    color:black;
-
+    width: 103px;
+    padding: 0px 0px 0px 7px;;
+    font-size: 21px;
+    color: #141414;
+    border-bottom: 4px solid #f5aaaa;
+    border-radius: 10px;
+}
+.Projet-ul li{
+font-size: 18px;
+height: 50px;
+position: relative;
+height: 35px;
 }
 
 @media screen and (max-width: 400px) {
     body{
         max-width: 100vw;
         overflow-x: hidden;
+        width: 320px;
     }
 h1{
-    width: auto;
     font-size: 30px;
-    color: rgb(255, 102, 0);
+}
+h2{
+    font-size: 25px;
+}
+section{
+    margin: 0;
+}
+.container{
+   width: 240px;
+   height: auto;
+   position: relative;
+   left: 90px;
+   top: -18px;
+   padding: 1px;
 }
 .BullesImage{
-    max-width: 150px;
-    margin: auto;
+    max-width: 90px;
+    margin-left: 0;
 }
+.BullesImage i{
+    font-size: 2em;
+}
+span{
+    font-size: 14px;
+}
+.text{
+    width: 63px;
+    font-size: 14px;
+    padding: 4px 8px 1px 7px;
+}
+.Projet-ul li{
+    font-size: 12px;
+    height: 30px;
+    list-style: none;
+    position: relative;
+    left: -28px;
+    top: -10px;
+    margin-bottom: 5px;
 }    
+}
 
 
 
