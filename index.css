@@ -1,8 +1,7 @@
 body{
     overflow-x: hidden;
     background-color: #faebd762;
-    width: 82vw;
-    margin: auto;
+    width: 85vw;
 }
 
 .nom{
@@ -53,13 +52,6 @@ section{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-.survoler{
-    position: relative;
-    left: 305px;
-    top: 109px;
-    width: 21px;
-    font-size: 15px;
 }
 
 .content1 .survoler, 
@@ -262,12 +254,7 @@ span{
         max-width: 120px;
         margin-left: 1%;
     }
-    .survoler{
-        left: 235px;
-        top:79px;
-        font-size: 14px;
-    }
-    
+
     .content1 .survoler, .content3 .survoler{
         left: 183px;
         top: 83px;
@@ -285,6 +272,9 @@ span{
 
 
 @media screen and (max-width: 600px) {
+    body{
+        width: 95vw;
+    }
     .nom{
         width: 70vw;
         margin: auto;
@@ -306,7 +296,7 @@ span{
     }
     
     .container{
-        width: 61vw;
+        width: 70vw;
         height: auto;
         position: relative;
         left: 90px;
@@ -349,10 +339,6 @@ span{
         display: flex;
         align-items: normal;
         flex-direction: column;
-    }
-    .survoler{
-        left: 95%;
-        font-size: 13px;
     }
 
     .content1 .survoler, .content2 .survoler, .content3 .survoler{
