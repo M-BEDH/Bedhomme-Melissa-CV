@@ -1,13 +1,13 @@
 body{
     overflow-x: hidden;
     background-color: #faebd762;
-    width: 55%;
+    width: 70vw;
     margin: auto;
 }
 .nom{
     display: flex;
     flex-direction: column;
-    width: 67%;
+    width: 70%;
     margin: auto;
     padding-top: 20px;
 }
@@ -19,15 +19,15 @@ h1{
 h2{
     font-size: 35px;
     margin: auto;
-    padding-top: 10px;
 }
 section{
+    width: 75vw;
    display: flex;
    justify-content: center;
    flex-direction: column;
 }
 .container{
-    width: 630px;
+    width: 50vw;
     position: relative;
     left: 200px;
     top: -6px;
@@ -168,7 +168,7 @@ span{
     border-radius: 10px;
 }
 .Projet-ul li{
-font-size: 18px;
+font-size: 20px;
 height: 50px;
 position: relative;
 height: 35px;
@@ -182,23 +182,23 @@ height: 35px;
 }
 
 
-@media screen and (min-width: 451px) and (max-width: 1035px) {
+@media screen and (min-width: 601px) and (max-width: 1135px) {
    body{
     margin: 0;
    } 
    .nom{
-width: 100%;
-   margin-left: 48%;
+   width: 100%;
    }
    h1, h2{
     font-size: 33px;
+    margin: auto;
    }
    section{
     width: 95vw;
     padding: 15px;
    }
    .container{
-    width: 470px;
+    width: 60vw;
     left: 140px;
     top: -35px;
    }
@@ -216,26 +216,25 @@ width: 100%;
 
 
 
-@media screen and (max-width: 450px) {
-    body{
-        width: 320px;
-    }
+@media screen and (max-width: 600px) {
     .nom{
-        width: 95%;
+        width: 70vw;
+        margin: auto;
     }
 h1{
-    font-size: 30px;
-}
-h2{
     font-size: 25px;
     margin: 0;
+}
+h2{
+    font-size: 22px;
     padding-top: 5px;
+    margin: 0;
 }
 section{
     margin: 0;
 }
 .container{
-   width: 240px;
+   width: 61vw;
    height: auto;
    position: relative;
    left: 90px;
@@ -267,6 +266,7 @@ span{
     margin-bottom: 8px;
 }   
 .survoler{
+    left: 97%;
     top:86px;
 }
 .Projets-git{
