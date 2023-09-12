@@ -296,10 +296,10 @@ span{
     }
     
     .container{
-        width: 70vw;
+        width: 80vw;
         height: auto;
         position: relative;
-        left: 90px;
+        left: 75px;
         top: -18px;
         padding: 1px;
     }
